@@ -4,7 +4,99 @@
     ViewData["Title"] = "Home page";
 }
 
+@* Add a header *@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@* Add 2 columns with MS docs *@
+<div id="row1" class="row">
+    <div class="col-md-6">
+        <h2>Getting started</h2>
+        <ul>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkID=699562">Add an app setting and secret in configuration</a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkId=699315">Add packages using NuGet</a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkId=699316">Add a model to a Razor Pages app</a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add a controller with views</a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkId=699318">Add a controller with views using Entity Framework Core</a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkId=699319">Scaffolded Razor Pages</a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkId=699320">Scaffolded MVC controller with views</a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkId=699321">Scaffolded MVC controller with views and using Entity Framework Core</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h2>More resources</h2>
+        <ul>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkID=398609">ASP.NET Core documentation</a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkID=699315">NuGet Package Explorer</a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkID=699316">NuGet Documentation</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<br>
+@* Add 1 column about dungeons and dragons *@
+<div id="row2" class="row">
+    <div class="col-md-12">
+        <h2>What is Dungeons and Dragons?</h2>
+        <p>
+            Dungeons & Dragons is a fantasy tabletop role-playing game (RPG) originally designed by Gary Gygax and Dave Arneson.
+            It was first published in 1974 by Tactical Studies Rules, Inc. (TSR). The game has been published by Wizards of the Coast (now a subsidiary of Hasbro) since 1997.
+            It was derived from miniature wargames with a variation of the Chainmail game serving as the initial rule system.
+            D&D's publication is commonly recognized as the beginning of modern role-playing games and the role-playing game industry.
+        </p>
+    </div>
+</div>
+@* Add 1 column about 5th edition *@ 
+<div id="row3" class="row">
+    <div class="col-md-12">
+        <h2>What is 5th Edition?</h2>
+        <p>
+            Dungeons & Dragons, fifth edition (D&D 5e) is a role-playing game published by Wizards of the Coast.
+            It is the first edition of D&D to make major changes to the game since the 3.5 edition of 2003.
+            The game was released on June 4th, 2014. The 5th edition of Dungeons & Dragons is the latest edition of the Dungeons & Dragons role-playing game.
+            It was released on June 4th, 2014. It is the first edition of D&D to make major changes to the game since the 3.5 edition of 2003.
+        </p>
+    </div>
+</div>
+@* Add 1 column about classes *@
+<div id="row4" class="row">
+    <div class="col-md-12">
+        <h2>What are the original classes from DnD?</h2>
+        <p>
+            The original classes from Dungeons & Dragons are the fighter, the cleric, the thief, and the magic-user.
+            The fighter is a warrior who uses weapons and armor to fight.
+            @* Insert an image of a fighter *@
+            <img src="~/images/fighter.jpg" alt="Fighter" width="200" height="200">
+            <br>
+            The cleric is a priest who uses divine magic to heal and fight.<br>
+            The thief is a rogue who uses stealth and trickery to fight.<br>
+            The magic-user is a wizard who uses arcane magic to fight.<br>
+        </p>
+    </div>
 </div>
