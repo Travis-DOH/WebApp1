@@ -5,8 +5,8 @@
 }
 
 @* Add a header *@
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+<div class="text-center myWords">
+    <h1 class="display-4">Assessing GitHub Copilot</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
@@ -17,9 +17,36 @@
         <ul>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a>
+                @* Show the first paragraph of the link above *@
+                <p class="myWords">
+                    Testing the LLM: Asked it to "Show the first paragraph of the link above".
+
+                    Preview:
+                </p>
+                <p class="copilot">
+                    In this section, you add a controller and a view. The controller is a class that handles incoming requests.
+                    The view is a template that your app uses to dynamically generate HTML responses.
+                </p>
+                <p class="myWords">
+                    <em>False</em> The linked page does not contain the content above.
+                </p>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?LinkID=699562">Add an app setting and secret in configuration</a>
+                @* Show the first paragraph of the link above *@
+                <p class="myWords">
+                    Testing the LLM: Asked it to "Show the first paragraph of the link above".
+                    <br>
+                </p>
+                <p class="copilot">  
+                    Preview:<br>
+                    In this section, you add an app setting and a secret to the app's configuration.
+                    The app setting is a name-value pair that can be retrieved at runtime.
+                    The secret is a value that can be used for cryptographic purposes.
+                </p>
+                <p class="myWords">
+                    <em>False</em> The linked page does not contain the content above. Furthermore, the link description does not correspond to the link itself.
+                </p>    
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?LinkId=699315">Add packages using NuGet</a>
@@ -63,32 +90,39 @@
 @* Add 1 column about dungeons and dragons *@
 <div id="row2" class="row">
     <div class="col-md-12">
-        <h2>What is Dungeons and Dragons?</h2>
-        <p>
+        <h2 class="myWords">Testing the LLM: "Add 1 column about dungeons and dragons"</h2>
+        <p class="copilot">
             Dungeons & Dragons is a fantasy tabletop role-playing game (RPG) originally designed by Gary Gygax and Dave Arneson.
             It was first published in 1974 by Tactical Studies Rules, Inc. (TSR). The game has been published by Wizards of the Coast (now a subsidiary of Hasbro) since 1997.
             It was derived from miniature wargames with a variation of the Chainmail game serving as the initial rule system.
             D&D's publication is commonly recognized as the beginning of modern role-playing games and the role-playing game industry.
+        </p>
+        <p class="myWords">
+            <em>True</em>, at least according to Wikipedia.
         </p>
     </div>
 </div>
 @* Add 1 column about 5th edition *@ 
 <div id="row3" class="row">
     <div class="col-md-12">
-        <h2>What is 5th Edition?</h2>
-        <p>
+        <h2 class="myWords">Testing the LLM: "Add 1 column about 5th edition"</h2>
+        <p class="copilot">
             Dungeons & Dragons, fifth edition (D&D 5e) is a role-playing game published by Wizards of the Coast.
             It is the first edition of D&D to make major changes to the game since the 3.5 edition of 2003.
             The game was released on June 4th, 2014. The 5th edition of Dungeons & Dragons is the latest edition of the Dungeons & Dragons role-playing game.
             It was released on June 4th, 2014. It is the first edition of D&D to make major changes to the game since the 3.5 edition of 2003.
+        </p>
+        <p class="myWords">
+            <em>False</em>, there was a 4th edition released in 2008 that made major changes. The 5th edition was released in 2014, but not on June 4th. The last 2 sentences are redundant and repeat the misinformation.
         </p>
     </div>
 </div>
 @* Add 1 column about classes *@
 <div id="row4" class="row">
     <div class="col-md-12">
-        <h2>What are the original classes from DnD?</h2>
-        <p>
+        <h2 class="myWords">Testing the LLM: Asked "Add 1 column about classes"</h2>
+        <p class="copilot">
+            <em>Response:</em><br>
             The original classes from Dungeons & Dragons are the fighter, the cleric, the thief, and the magic-user.
             <br>
             The fighter is a warrior who uses weapons and armor to fight.
@@ -99,5 +133,33 @@
             The thief is a rogue who uses stealth and trickery to fight.<br>
             The magic-user is a wizard who uses arcane magic to fight.<br>
         </p>
+        <p class="myWords">
+            <em>False</em>, the original classes are the "Fighting man", Cleric, and Magic-User. The Thief was added later.
+        </p>
     </div>
 </div>
+
+@* Please add 1 column about the Colorado Rockies and place line breaks after each sentence *@
+<div id="row5" class="row">
+    <div class="col-md-12">
+        <h2 class=myWords">Testing the LLM: Asked "Please add 1 column about the Colorado Rockies and place line breaks after each sentence"
+        <em>Below is the entire response, including the conclusion (false) and contradicting facts!</em></h2>
+        <h2 class="copilot">Testing the LLM: Asked "Please add 1 column about the Colorado Rockies and place line breaks after each sentence"</h2>
+        <p class="copilot">
+            <em>Response:</em><br>
+            The Colorado Rockies are a Major League Baseball team based in Denver, Colorado. The Rockies compete in Major League Baseball as a member club of the National League West division.
+            The team was founded on November 4th, 1992, and played its first game on April 5th, 1993.
+            The Rockies played their home games at Mile High Stadium in Denver until the end of the 1999 season.
+            They then moved to Coors Field, which opened in 1995, but was not ready for baseball until 1995.
+            The Rockies were the first Major League Baseball team to play their home games at an altitude of over 5,000 feet above sea level.
+            <br>
+            <em>False</em>, the Rockies played their first game on April 8th, 1993. The Rockies played their home games at Mile High Stadium in Denver until the end of the 1999 season.
+            They then moved to Coors Field, which opened in 1995, but was not ready for baseball until 1995.
+            The Rockies were the first Major League Baseball team to play their home games at an altitude of over 5,000 feet above sea level.
+        </p>
+    </div>
+
+
+
+
+
