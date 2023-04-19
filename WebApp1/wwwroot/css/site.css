@@ -20,3 +20,53 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Change "copilot" class font color to dark red */
+.copilot {
+  color: #8b0000;
+}
+
+/* Change "copilot" class font style to monospace */
+.copilot {
+  font-family: monospace;
+}
+
+/* Change "myWords" class font style to dark blue */
+.myWords {
+  color: #00008b;
+}
+
+/* Increase "myWords" class font size  */
+/*
+.myWords,
+.copilot {
+  font-size: 1.5em;
+}
+*/
+
+
+/* Put a medium black border around "box" class */
+/*
+.box {
+  border: 3px solid black;
+}
+*/
+
+/* Put a medium black border around "box" and fit to text */
+.box {
+  border: 3px solid black;
+  display: inline-block;
+}
+
+/* Put a medium black border around "key" id, fit to text, and center on page */
+#key {
+  border: 3px solid black;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* Add a margin and green border to "box" class */
+.box {
+  border: 3px solid green;
+  margin: 10px;
+}

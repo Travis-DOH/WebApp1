@@ -4,12 +4,27 @@
     ViewData["Title"] = "Home page";
 }
 
-@* Add a header *@
 <div class="text-center myWords">
     <h1 class="display-4">Assessing GitHub Copilot</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-
+<div id="key">
+    <h2>KEY:</h2>
+    <p class="myWords">
+        My Words.
+    </p>
+    <p class="copilot">
+        Copilot Text.
+    </p>
+</div>
+<br>
+<p class="myWords">
+    The link below is a default link on new .NET Core Web App projects.
+</p>
+<br>
+<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<p class="myWords">
+    The content below was created by copilot with the following prompt: "Add 2 columns with MS docs".
+</p>
 @* Add 2 columns with MS docs *@
 <div id="row1" class="row">
     <div class="col-md-6">
@@ -19,8 +34,8 @@
                 <a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a>
                 @* Show the first paragraph of the link above *@
                 <p class="myWords">
-                    Testing the LLM: Asked it to "Show the first paragraph of the link above".
-
+                    Testing the LLM: "Show the first paragraph of the link above".
+                    <br>
                     Preview:
                 </p>
                 <p class="copilot">
@@ -28,14 +43,14 @@
                     The view is a template that your app uses to dynamically generate HTML responses.
                 </p>
                 <p class="myWords">
-                    <em>False</em> The linked page does not contain the content above.
+                    <em>False</em>, the linked page does not contain the content above.
                 </p>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?LinkID=699562">Add an app setting and secret in configuration</a>
                 @* Show the first paragraph of the link above *@
                 <p class="myWords">
-                    Testing the LLM: Asked it to "Show the first paragraph of the link above".
+                    Testing the LLM: "Show the first paragraph of the link above".
                     <br>
                 </p>
                 <p class="copilot">  
@@ -50,6 +65,9 @@
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?LinkId=699315">Add packages using NuGet</a>
+                <p class="myWords">
+                    The link description does not correspond to the link itself. It points to "Safe storage of app secrets in development in ASP.NET Core".
+                </p>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?LinkId=699316">Add a model to a Razor Pages app</a>
@@ -158,6 +176,9 @@
             The Rockies were the first Major League Baseball team to play their home games at an altitude of over 5,000 feet above sea level.
         </p>
     </div>
+</div>
+
+
 
 
 
